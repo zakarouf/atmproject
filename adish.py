@@ -92,7 +92,3 @@ def main_menu():
 
 main_menu()
 
-
-
-#Output
-#Hello Adish
