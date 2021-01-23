@@ -180,7 +180,7 @@ def SysAdmin():
                     row = cursorA.fetchone()
                     Aid = int(row[0]) + 1
                     print(Aid)
-                    cursorA.execute("INSERT INTO accounts VALUES (%s, %s, %s, %s, %s)", (str(Aid), name, bal, True, passw))
+                    cursorA.execute("INSERT INTO accounts VALUES (%s, %s, %s, %s, %s);", (str(Aid), name, bal, True, passw))
                     db.commit()
                 except AttributeError:
                     print("Error")
